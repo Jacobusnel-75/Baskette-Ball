@@ -1,0 +1,36 @@
+<html>
+    <head><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+        <link rel="stylesheet" href="index.css">
+    </head>
+    <body>
+        <div class="container">
+            <div>
+                <h3 class="heading" id="margin-home">HOME</h3>
+                <div class="home-score-container">
+                    <p class="home-score" id="count-el">0</p>
+                </div>
+                <div class="increments">
+                    <button class="increment-btn" onclick="homeOne()">+1</button>
+                    <button class="increment-btn" onclick="homeTwo()">+2</button>
+                    <button class="increment-btn" onclick="homeThree()">+3</button>
+                </div>
+            </div>
+            <div class="heading">
+                <h3 class="heading" id="margin-guest">GUEST</h3>
+                <div class="guest-score-container">
+                    <p class="guest-score" id="count2-el">0</p>
+                </div>
+                <div class="increments">
+                    <button class="increment-btn" onclick="guestOne()" id="guest0ne-el">+1</button>
+                    <button class="increment-btn" onclick="guestTwo()" id="guestTwo-el">+2</button>
+                    <button class="increment-btn" onclick="guestThree()" id="guestThree-el">+3</button>
+                </div>
+            </div>
+        </div>
+        <div id="resetDiv">
+                <button class="reset" onclick="zeroLeft()" id="homeZero-el">ZERO</button>
+                <button class="reset" onclick="zeroRight()" id="guestZero-el">ZERO</button>
+        </div>
+        <script src="index.js"></script>
+    </body>
+</html>
